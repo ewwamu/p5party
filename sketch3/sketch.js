@@ -5,7 +5,7 @@ let clear;
 // 'drawColor' starting color
 let drawColor = "tomato";
 
-// setting color palette
+// color palette
 const palette = [
     "tomato",
     "darkorange",
