@@ -22,7 +22,7 @@ function setup() {
 
     // set/reset shared object properties
     partySetShared(shared, {
-        letter: 'code',
+        letter: 'coded',
     });
 }
 
@@ -31,6 +31,26 @@ function keyPressed() {
     // set value of shared.letter to morse code equivalent of key pressed
     if (shared.letter = (keyCode === 65) ) {
             shared.letter = '•-';
+        } else if (shared.letter = (keyCode === 48) ) {
+            shared.letter = '-----';
+        } else if (shared.letter = (keyCode === 49) ) {
+            shared.letter = '•----';
+        } else if (shared.letter = (keyCode === 50) ) {
+            shared.letter = '••---';
+        } else if (shared.letter = (keyCode === 51) ) {
+            shared.letter = '•••--';
+        } else if (shared.letter = (keyCode === 52) ) {
+            shared.letter = '••••-';
+        } else if (shared.letter = (keyCode === 53) ) {
+            shared.letter = '•••••';
+        } else if (shared.letter = (keyCode === 54) ) {
+            shared.letter = '-••••';
+        } else if (shared.letter = (keyCode === 55) ) {
+            shared.letter = '--•••';
+        } else if (shared.letter = (keyCode === 56) ) {
+            shared.letter = '---••';
+        } else if (shared.letter = (keyCode === 57) ) {
+            shared.letter = '----•';
         } else if (shared.letter = (keyCode === 66) ) {
             shared.letter = '-•••';
         } else if (shared.letter = (keyCode === 67) ) {
@@ -92,7 +112,7 @@ function draw() {
     // configure text options
     fill('lightblue');
     textFont('COURIER NEW');
-    textSize(140);
+    textSize(120);
 
     // draw most recent key pressed to the screen
     text(shared.letter, width / 2, height / 2);

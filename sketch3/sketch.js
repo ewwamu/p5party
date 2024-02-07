@@ -21,7 +21,7 @@ function preload() {
         "ew-cy_sketch3",
         "main", 
     );
-    shared = partyLoadShared("shared");
+    shared = partyLoadShared("shared", shared);
     clear = partyLoadShared("clear", {
         clickHistory:[],
         startTime: Date.now(),

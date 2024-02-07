@@ -1,9 +1,16 @@
 // let timer = 10;
+
+let shared;
+
 function preload() {
     partyConnect(
         "wss://demoserver.p5party.org",
         "ew_hello_party",
+        "main",
     );
+    
+    shared = partyLoadShared("shared", shared);
+
 }
 
 function setup() {
