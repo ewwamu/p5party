@@ -97,8 +97,8 @@ for (let i = 0; i < palette.length; i++) {
 // defines style of red 'X'
   noFill();
   stroke("red");
-  line(480 + 5, 400 + 5, 450 - 5, 440 - 5);
-  line(450 - 5, 400 + 5, 480 + 5, 440 - 5);
+  line(480 + 5, 400 + 5, 410 - 5, 480 - 5);
+  line(410 - 5, 400 + 5, 480 + 5, 480 - 5);
 
   pop();
 
