@@ -111,8 +111,10 @@ function drawPixels() {
   // defines width and length of each pixel based on 400
   for (let row = 0; row < 5; row++) {
     for (let col = 0; col < 5; col++) {
+        
       const x = col * 80;
       const y = row * 80;
+
       if (shared.grid[col][row]) {
         fill(color(shared.grid[col][row]));
         rect(x + 1, y + 1, 80 - 2, 80 - 2, 2, 2, 2, 2);
