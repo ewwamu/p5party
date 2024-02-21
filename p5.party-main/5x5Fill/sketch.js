@@ -62,9 +62,9 @@ function preload() {
 function setup() {
 	// createCanvas(400, 500);
 	//  Host has to click start for the timer to begin
-	button = createButton('start');
-	button.position(CENTER);
-	button.style('font-size', '20px');
+	button = createButton('start->');
+	button.position(470, 575);
+	button.style('font-size', '30px');
 	button.style('background-color', 'hotpink');
 	button.style('border-radius', '25px');
 
@@ -77,11 +77,11 @@ function setup() {
 		// Initialize grid; check if there is a host instead of shared grid
 		resetGrid();
 		// Only one person has timer (host) who'll control
-		shared_time.gameTimer = 20; // Change this to the desired initial value
+		shared_time.gameTimer = 15; // Change this to the desired initial value
 		// Only one person has timer (host) who'll control
 		partySetShared(shared_time, { gameTimer: shared_time.gameTimer });
 	}
-	textFont('FT88-Regular');
+	textFont('TINY-140');
 
 }
 
@@ -132,7 +132,7 @@ function draw() {
 	// important loop one
 	if (sceneNum == 0) {
 		// sends 0 --> 1 
-		createCanvas(windowWidth, windowHeight);
+		createCanvas(500, 600);
 		button.mousePressed(updatesceneNum);
 		text('game instructions', 0, 50);
 		background('lightpink');
@@ -141,7 +141,7 @@ function draw() {
 	console.log(gameRunningState)
 	// loop two (main, "always" on)
 	if (sceneNum == 1 && gameRunningState === true) {
-		createCanvas(windowWidth, windowHeight);
+		createCanvas(500, 600);
 		background('papayawhip');
 		assignPlayers();
 		drawPixels();
@@ -174,7 +174,7 @@ function drawUI() {
 	// pop();
 
 	// Display timer
-	textFont('FT88-Regular');
+	textFont('TINY-140');
 	text(shared_time.gameTimer, 10, 575);
 	textSize(60);
 }
@@ -303,7 +303,7 @@ function determineWinner() {
 }
 
 function displayResult(result) {
-	createCanvas(windowWidth, windowHeight);
+		createCanvas(500, 600);
 	background('lightpink');
 	//  Define in setup to fix the look of the timer
 	// fill("white");

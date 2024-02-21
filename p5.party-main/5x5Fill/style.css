@@ -1,7 +1,8 @@
 
 @font-face {
-    font-family: 'FT88-Regular';
-    src:    url('./assets/FT88-Regular.ttf') format('ttf');
+    font-family: 'TINY-140';
+    src: url('./assets/TINY-140.woff') format('woff');
+	src: url('./assets/TINY-140.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,7 +12,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	font-family: 'FT88-Regular';
+	font-family: 'TINY-140';
 }
 
 canvas {
@@ -25,5 +26,5 @@ body {
 }
 
 button {
-	font-family: 'FT88-Regular';
+	font-family: 'TINY-140';
 }
