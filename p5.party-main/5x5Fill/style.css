@@ -1,8 +1,17 @@
+
+@font-face {
+    font-family: 'FT88-Regular';
+    src:    url('./assets/FT88-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html,
 body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	font-family: 'FT88-Regular';
 }
 
 canvas {
@@ -13,4 +22,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+button {
+	font-family: 'FT88-Regular';
 }
