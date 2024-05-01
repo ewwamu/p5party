@@ -1,0 +1,75 @@
+
+@font-face {
+  font-family: 'QuinqueFive';
+  src: url('../assets/fonts/QuinqueFive.woff') format('woff');
+  src: url('../assets/fonts/QuinqueFive.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  background-color: lightgreen;
+  color: green;
+  cursor: auto;
+  margin: 1.25rem;
+  font-family: 'QuinqueFive';
+  font-style: normal;
+  line-height: 1.5rem;
+}
+
+.hi {
+    font-size: 4rem;
+}
+
+.proj {
+  margin-top: 2rem;
+  line-height: 3rem;
+}
+
+#kumquat {
+  position: absolute;
+  margin: none;
+  left: 30vw;
+  top: 30vh;
+  max-width: 18vw;
+  display: none;
+}
+
+a:hover + #kumquat {
+  display: block;
+}
+
+#p1 {
+  position: absolute;
+  margin: none;
+  left: 40vw;
+  top: 40vh;
+  max-width: 10%;
+  display: none;
+}
+
+a:hover + #p1 {
+  left: 40vw;
+  top: 40vh;
+  display: block;
+}
+
+.me {
+    position: fixed;
+    top: 92vh;
+    font-size: 1.25rem;
+    text-align: left;
+    align-content: left;
+}
+
+a {
+  font-size: 2rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: green;
+  color: lightgreen;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+}
